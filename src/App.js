@@ -1,10 +1,15 @@
 import './App.css';
-import { Counter } from './views/Counter/Counter.jsx' 
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import AppRouter from './Router.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Router>
+        <Navbar />
+        <AppRouter />
+      </Router>
     </div>
   );
 }

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Button } from './../../components/Button/Button';
 
-export const Counter = () => {
+const Counter = () => {
     // count state
     const [count, setCount] = useState(0);
     // (+)
@@ -36,3 +36,5 @@ export const Counter = () => {
         </main>
     );
 }
+
+export default Counter;
