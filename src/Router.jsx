@@ -7,6 +7,7 @@ import About from './views/About';
 import Products  from './views/Products';
 import Product  from './views/Products/Product';
 import Counter from './views/Counter';
+import Todos from './views/Todos';
 import NotFound from './views/NotFound';
 
 const AppRouter = () => {
@@ -17,6 +18,7 @@ const AppRouter = () => {
             <Route path="/products" element={<Products />} />
             <Route path="/products/:id" element={<Product />} />
             <Route path="/counter" element={<Counter />} />
+            <Route path="/todos" element={<Todos />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     )

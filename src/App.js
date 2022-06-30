@@ -5,7 +5,7 @@ import AppRouter from './Router.jsx';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Navbar />
         <AppRouter />
