@@ -1,26 +1,25 @@
 import { useState, useEffect } from "react";
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from "react-router-dom";
+import { getProducts } from './../../redux/features/productsSlice';
 
 const Products = () => {
+
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    fetchProducts();
+  //   fetchProducts();
+    dispatch(getProducts())
   }, []);
 
-  const fetchProducts = () => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => setProducts(json));
-  };
-
-  const [products, setProducts] = useState([]);
-
-  console.log(products);
+  const products = useSelector(state => state.productSlice.products);
+  const loading = useSelector(state => state.productSlice.loading);
 
   return (
     <div className="prosucts-wrapper">
       <h2 className="my-5">Products</h2>
       <div className="container">
-        {products.length > 0 ? (
+        {!loading ? (
           <div className="products row justify-content-center">
             {products.map((product, i) => {
               return (

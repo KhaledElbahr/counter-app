@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Integrate Redux with React
 import { Provider } from 'react-redux';
-import { Store } from './redux';
+import { Store } from './redux/store.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

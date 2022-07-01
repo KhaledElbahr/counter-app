@@ -1,7 +1,7 @@
 import { ListGroup, Button } from 'react-bootstrap'
 
 const TodosList = (props) => {
-  console.log(props)
+  // console.log(props)
 
   const todosList =
   props.todos && props.todos.length > 0 ? (
