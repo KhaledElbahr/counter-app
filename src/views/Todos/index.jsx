@@ -4,7 +4,7 @@ import TodoForm from './../../components/Todo/TodoForm';
 import TodoList from './../../components/Todo/TodoList';
 
 const Todos = () => {
-  const todos = useSelector((state) => state.todoSlice.todos);
+  const todos = useSelector((state) => state.persistedTodoReducer.todos);
   const dispatch = useDispatch();
 
   const onAddTodo = (todo) => {

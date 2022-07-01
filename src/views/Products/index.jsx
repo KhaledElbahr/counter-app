@@ -12,8 +12,8 @@ const Products = () => {
     dispatch(getProducts())
   }, []);
 
-  const products = useSelector(state => state.productSlice.products);
-  const loading = useSelector(state => state.productSlice.loading);
+  const products = useSelector(state => state.persistedProductsReducer.products);
+  const loading = useSelector(state => state.persistedProductsReducer.loading);
 
   return (
     <div className="prosucts-wrapper">

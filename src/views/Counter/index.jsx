@@ -5,7 +5,7 @@ import { Button } from './../../components/Button/Button';
 
 const Counter = () => {
     const dispatch = useDispatch();
-    const count = useSelector((state) => state.counterSlice.counter)
+    const count = useSelector((state) => state.persistedCounterReducer.counter)
     // (+)
     const incrementCounter = () => {
         dispatch(incrementCount(1))
