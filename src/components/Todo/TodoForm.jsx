@@ -14,7 +14,7 @@ const TodoForm = (props) => {
     }
 
     return (
-        <form className="w-25 mx-auto" onSubmit={handleSubmission}>
+        <Form className="w-25 mx-auto" onSubmit={handleSubmission}>
             {/* Title Input */}
             <Form.Group className="mb-3" controlId="title">
                 <Form.Label>Title</Form.Label>
@@ -39,7 +39,7 @@ const TodoForm = (props) => {
             <div className="text-center">
                 <Button type="submit" className="btn-lg mt-3 px-4" variant="dark">Add TODO</Button>
             </div>
-        </form>
+        </Form>
     )
 }
 

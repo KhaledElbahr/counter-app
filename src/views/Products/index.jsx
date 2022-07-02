@@ -16,7 +16,7 @@ const Products = () => {
   const loading = useSelector(state => state.persistedProductsReducer.loading);
 
   return (
-    <div className="prosucts-wrapper">
+    <div className="container py-2">
       <h2 className="my-5">Products</h2>
       <div className="container">
         {!loading ? (

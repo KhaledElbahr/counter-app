@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <NavBoot bg='light' expand='lg'>
+    <NavBoot bg="light" expand='lg'>
       <Container>
         <NavBoot.Brand>Khaled Elbahr</NavBoot.Brand>
         <NavBoot.Toggle aria-controls='basic-navbar-nav' />
@@ -14,6 +14,7 @@ const Navbar = () => {
             <Nav.Link as={Link} to="/products">Products</Nav.Link>
             <Nav.Link as={Link} to="/counter">Counter</Nav.Link>
             <Nav.Link as={Link} to="/todos">Todos</Nav.Link>
+            <Nav.Link as={Link} to="/signup">Sign UP</Nav.Link>
           </Nav>
         </NavBoot.Collapse>
       </Container>

@@ -17,7 +17,7 @@ const Todos = () => {
 
   return (
     <div className='container py-2'>
-      <h2>TODO</h2>
+      <h2 className="my-5">TODO</h2>
       <TodoForm addTodo={onAddTodo} />
       <TodoList todos={todos} deleteTodo={onDeleteTodo} />
     </div>
